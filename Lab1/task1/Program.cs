@@ -10,7 +10,7 @@ class Program
         bool onRectangleBorder = (x == -a || x == a) && y >= -b && y <= b ||
                                  (y == -b || y == b) && x >= -a && x <= a;
 
-        bool onCircleBorder = Math.Abs(x * x + y * y - R * R) < 1e-6; // наближене порівняння
+        bool onCircleBorder = Math.Abs(x * x + y * y - R * R) < 1e-6; 
 
         if (onRectangleBorder || onCircleBorder)
             return "На межі";
